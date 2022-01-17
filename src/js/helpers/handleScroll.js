@@ -81,6 +81,6 @@ const applyClasses = (el, top) => {
  * @return {void}
  */
 const handleScroll = $elements =>
-  $elements.forEach((el, i) => applyClasses(el, window.pageYOffset));
+  $elements.forEach((el, i) => applyClasses(el, document.getElementById('main-view').scrollTop));
 
 export default handleScroll;
